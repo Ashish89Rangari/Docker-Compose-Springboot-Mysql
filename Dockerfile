@@ -1,5 +1,5 @@
 
-# Including the Base image
+# Including the Base image run application spring boot
 
 FROM openjdk:17
 
@@ -15,7 +15,7 @@ EXPOSE 8080
 
 # Copy is used copy the jar file from HOST Machine to Conatiner machine  
 # After building project with maven in target folder jar file will be created
-# usr/app is container repo were jar file will be copied 
+# " spring-boot-mysql.jar" Directly copying in container repo were jar file will be copied 
 
 COPY target/spring-boot-mysql.jar spring-boot-mysql.jar
 
